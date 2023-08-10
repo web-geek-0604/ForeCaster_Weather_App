@@ -43,7 +43,7 @@ function App() {
 
   return (
     <div className="container">
-      <div className='mx-auto my-[50px] p-4 flex flex-wrap items-center justify-center text-3xl sm:text-5xl'>
+      <div className='mx-auto my-[50px] p-4 flex flex-wrap items-center justify-center text-xl sm:text-5xl'>
         <div className='flex items-center justify-center'><h1 className='text-center text-white  font-ubuntu'>F</h1><img className='w-[40px] mt-[15px] sm:w-[50px]' src="icons/snowflake.svg" alt="snowflake" /></div><div><h1 className='text-center text-white font-ubuntu'>reCaster : Weather App</h1></div>
       </div>
       <Search onSearchChange={handleOnSearchChange} />
