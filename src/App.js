@@ -57,7 +57,7 @@ function App() {
       </div>
 {/*       {forecast && <CurrentForecast  data={forecast} /> }  */}
       <div className='flex text-center text-gray-300 items-center justify-center my-[30px]'>
-        <p>Powered by <b>OpenWeather</b></p>
+        <p>Powered by <b>OpenWeather</b> | &copy 2023 All rights reserved by ForeCaster </p>
       </div>
     </div>
   );
