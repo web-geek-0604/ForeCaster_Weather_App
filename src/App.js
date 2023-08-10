@@ -47,7 +47,7 @@ function App() {
         <div className='flex items-center justify-center'><h1 className='text-center text-white  font-ubuntu'>F</h1><img className='w-[40px] mt-[15px] sm:w-[50px]' src="icons/snowflake.svg" alt="snowflake" /></div><div><h1 className='text-center text-white font-ubuntu'>reCaster : Weather App</h1></div>
       </div>
       <Search onSearchChange={handleOnSearchChange} />
-      <div className="p-3 m-3 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3  gap-2">
+      <div className="p-3 m-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3  gap-2">
         {currentWeather && <CurrentWeather data={currentWeather} />}
         {pollution && <CurrentPollution data={pollution} />}
         {currentWeather && <CurrentTime data={currentWeather} />}
