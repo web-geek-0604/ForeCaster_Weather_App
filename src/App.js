@@ -23,7 +23,7 @@ function App() {
     const [lat,lon] = searchData.value.split(" ");
     const CurrentWeatherFetch = fetch(`${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`);
     //const ForecastFetch = fetch(`${WEATHER_API_URL}/forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`);
-    const CurrentPollution = fetch(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}`);
+    const CurrentPollution = fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}`);
 
     Promise.all([CurrentWeatherFetch, /* ForecastFetch */CurrentPollution])
     .then(async (response) =>{
