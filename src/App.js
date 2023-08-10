@@ -44,7 +44,7 @@ function App() {
   return (
     <div className="container">
       <div className='mx-auto my-[50px] p-4 sm:flex sm:flex-wrap sm:items-center sm:justify-center text-2xl sm:text-5xl block'>
-        <div className='flex items-center justify-center'><h1 className='text-center text-white  font-ubuntu'>F</h1><img className='w-[40px] mt-[15px] sm:w-[50px]' src="icons/snowflake.svg" alt="snowflake" /><h1 className='text-center text-white  font-ubuntu'>reCaster :</h1></div><div><h1 className='text-center text-white font-ubuntu'>Weather App</h1></div>
+        <div className='flex items-center justify-center'><h1 className='text-center text-white  font-ubuntu'>F</h1><img className='w-[40px] sm:w-[50px]' src="icons/snowflake.svg" alt="snowflake" /><h1 className='text-center text-white  font-ubuntu'>reCaster :</h1></div><div><h1 className='text-center text-white font-ubuntu'>Weather App</h1></div>
       </div>
       <Search onSearchChange={handleOnSearchChange} />
       <div className="p-3 m-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3  gap-2">
