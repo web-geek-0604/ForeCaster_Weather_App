@@ -56,7 +56,7 @@ function App() {
         {currentWeather && <CurrentHumidity data={currentWeather} />}
         {currentWeather && <CurrentClouds data={currentWeather} />}    
       </div>
-{       {forecast && <CurrentForecast  data={forecast} /> }  }
+ <CurrentForecast/>
       <div className='flex text-center text-gray-300 items-center justify-center my-[30px]'>
         <p>Powered by <b>OpenWeather</b> | &copy; 2025 All rights reserved by <b>ForeCaster</b></p>
       </div>
