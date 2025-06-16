@@ -9,6 +9,7 @@ import CurrentTime from './components/current-time/current-time';
 import CurrentWind from './components/wind';
 import CurrentHumidity from './components/humidity';
 import CurrentClouds from './components/clouds';
+import CurrentForecast from './components/forecast';
 //import CurrentForecast from './components/forecast/forecast'
 
 
@@ -55,7 +56,7 @@ function App() {
         {currentWeather && <CurrentHumidity data={currentWeather} />}
         {currentWeather && <CurrentClouds data={currentWeather} />}    
       </div>
-{/*       {forecast && <CurrentForecast  data={forecast} /> }  */}
+{       {forecast && <CurrentForecast  data={forecast} /> }  }
       <div className='flex text-center text-gray-300 items-center justify-center my-[30px]'>
         <p>Powered by <b>OpenWeather</b> | &copy; 2025 All rights reserved by <b>ForeCaster</b></p>
       </div>
